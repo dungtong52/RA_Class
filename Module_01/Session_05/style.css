@@ -1,0 +1,27 @@
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ex-02-container {
+  border: 3px solid black;
+  margin: 20px;
+  background-color: #eee;
+  padding: 20px;
+}
+.ex-02-container .col {
+  background-color: aquamarine;
+  color: white;
+  height: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 25%;
+}
+
+.ex-02-container .row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
