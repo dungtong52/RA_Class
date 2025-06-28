@@ -106,7 +106,7 @@ public class BTTH01 {
                     for (int i = 0; i < currentIndex; i++) {
                         boolean isPrime = true;
                         if (numberArr[i] >= 2) {
-                            for (int j = 2; j < Math.sqrt(numberArr[i]); j++) {
+                            for (int j = 2; j <= Math.sqrt(numberArr[i]); j++) {
                                 if (numberArr[i] % j == 0) {
                                     isPrime = false;
                                     break;
@@ -115,9 +115,9 @@ public class BTTH01 {
                         } else {
                             isPrime = false;
                         }
-                    }
-                    if (!false) {
-                        countPrime++;
+                        if (!false) {
+                            countPrime++;
+                        }
                     }
                     System.out.printf("Có %d số nguyên tố", countPrime);
                     break;
@@ -176,7 +176,7 @@ public class BTTH01 {
                             }
                         }
                     }
-                    // Sắp xếp mảng Other giảm dần
+                    // Sắp xếp mảng Other tăng dần
                     for (int i = 0; i < otherNumbers.length - 1; i++) {
                         for (int j = i + 1; j < otherNumbers.length; j++) {
                             if (otherNumbers[i] > otherNumbers[j]) {
@@ -213,7 +213,7 @@ public class BTTH01 {
                                 indexMax = j;
                             }
                         }
-                        if (indexMax != 0) {
+                        if (indexMax != i) {
                             int temp = numberArr[i];
                             numberArr[i] = numberArr[indexMax];
                             numberArr[indexMax] = temp;
