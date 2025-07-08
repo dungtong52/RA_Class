@@ -1,0 +1,63 @@
+🔰 PHẦN 1: LAMBDA & FUNCTIONAL INTERFACES
+Bài 1: Sắp xếp danh sách
+Viết chương trình để sắp xếp danh sách các chuỗi theo thứ tự độ dài tăng dần, sử dụng Lambda Expression.
+
+List<String> names = Arrays.asList("John", "Alexander", "Bob", "Christine");
+// Sort by length using lambda
+
+Bài 2: Dùng Predicate để lọc
+Viết phương thức lọc danh sách số nguyên và chỉ giữ lại các số chẵn.
+
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+// Use Predicate<Integer>
+
+Bài 3: Dùng Function để chuyển đổi
+Dùng Function<String, Integer> để chuyển đổi danh sách chuỗi sang danh sách độ dài chuỗi tương ứng.
+
+List<String> words = Arrays.asList("Java", "Lambda", "Stream");
+// Output: [4, 6, 6]
+
+🌊 PHẦN 2: STREAM API
+Bài 4: Lọc và đếm phần tử
+Từ danh sách số nguyên, đếm xem có bao nhiêu số lớn hơn 10.
+
+List<Integer> list = Arrays.asList(5, 11, 20, 3, 15, 7);
+Bài 5: Tính trung bình
+Tính trung bình cộng của tất cả số nguyên dương trong danh sách.
+
+List<Integer> numbers = Arrays.asList(3, -2, 8, 10, -5);
+
+Bài 6: Chuyển đổi và nối chuỗi
+Từ danh sách ["java", "stream", "lambda"] → viết Stream để chuyển thành "JAVA-STREAM-LAMBDA".
+
+Bài 7: Tìm phần tử đầu tiên thoả mãn
+Tìm phần tử đầu tiên chia hết cho 5 trong danh sách, nếu không có thì trả về "Không tìm thấy".
+
+🔄 PHẦN 3: OPTIONAL
+Bài 8: Xử lý null an toàn với Optional
+Viết hàm getUserEmail(User user) trả về email của user nếu có, nếu không thì trả về "No Email".
+
+🕰 PHẦN 4: DATE / TIME API
+Bài 9: In ngày hiện tại theo định dạng
+In ngày hiện tại theo định dạng "dd-MM-yyyy HH:mm" bằng java.time.
+
+Bài 10: Tính số ngày giữa 2 ngày
+Viết chương trình tính số ngày giữa hai ngày LocalDate.
+
+🎯 PHẦN 5: BÀI TẬP TỔNG HỢP (NÂNG CAO)
+Bài 11: Tính tổng tiền đơn hàng
+Cho danh sách List<Order> với mỗi Order gồm tên sản phẩm, số lượng, đơn giá. Tính tổng tiền tất cả đơn hàng.
+
+class Order {
+    String product;
+    int quantity;
+    double pricePerUnit;
+}
+
+Bài 12: Group và tổng hợp theo category
+Cho danh sách sản phẩm gồm name, category, price. Dùng Stream API để:
+
+Gom nhóm theo category
+
+Tính tổng giá theo mỗi nhóm
+
