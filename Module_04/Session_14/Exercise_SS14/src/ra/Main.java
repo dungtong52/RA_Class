@@ -37,6 +37,8 @@ public class Main {
                     case 9 -> orderBusiness.findOrderAmountMax();
                     default -> System.exit(0);
                 }
+            } else {
+                System.err.println("Nhập sai định dạng!");
             }
         } while (true);
     }
