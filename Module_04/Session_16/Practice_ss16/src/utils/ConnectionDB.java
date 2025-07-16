@@ -1,9 +1,6 @@
 package utils;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class ConnectionDB {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
@@ -21,7 +18,7 @@ public class ConnectionDB {
         }
         return connection;
     }
-    public static void closeConnection(Connection connection, CallableStatement callableStatement){
+    public static void closeConnection(Connection connection, Statement callableStatement){
         if(connection != null){
             try {
                 connection.close();
